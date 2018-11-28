@@ -2,14 +2,14 @@ pipeline {
            agent any 
 	        stages {
 	                 stage('one') {
-		             step{
-                                             echo 'hello this is nourin from cybage'
-                                               }
+		                 steps {
+                                   echo 'hello this is nourin from cybage'
+                                       }
                                       }
-	         stage(''two) {
-                                      steps {
+	                 stage('two') {
+                                  steps {
                                       input('do you want to proceed')
-                                          }
-                                  }
+                                         }
+                                      }
 }
 }
